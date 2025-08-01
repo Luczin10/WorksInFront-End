@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    
+    <style>
+/* SELETORES PERSONALIZADOS
+# = id
+. = class
+: = pseudo elementos 
+:: = pseudo classes
+
+*/
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            color: rgb(255, 0, 0);
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkred;
+        }
+        a:hover{
+            color: rgb(6, 151, 151);
+            text-decoration: underline;
+        }
+        a::after{
+            content: ' [link]';
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Vamos começar</h1>
+    <ul>
+        <li><a href="https://github.com/Luczin10" target="_blank"> Meu repositorio</a></li>
+        <li><a href="https://www.youtube.com/c/CursoemV%C3%ADdeo" target="_blank"> Canal do youtube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank"> Site do maioral</a></li>
+    </ul>
+</body>
+</html>
